@@ -1,0 +1,12 @@
+image:
+  repository: postgres
+  tag: "13"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5432
+
+volumeMountPath: /var/lib/postgresql/data
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+</head>
+<body>
+  <h1>Blog</h1>
+
+  <h2>Add New Post</h2>
+  <form id="postForm">
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    <textarea id="content" placeholder="Content" required></textarea><br><br>
+    <button type="submit">Add Post</button>
+  </form>
+
+  <hr>
+
+  <h2>All Posts</h2>
+  <ul id="posts"></ul>
+
+  <script>
+    function loadPosts() {
+      fetch("http://backend:5000/posts")
+        .then(res => res.json())
+        .then(data => {
+          const postsList = document.getElementById("posts");
+          postsList.innerHTML = "";
+          data.forEach(post => {
+            const li = document.createElement("li");
+            li.innerHTML = `<strong>${post.title}</strong>: ${post.content}`;
+            postsList.appendChild(li);
+          });
+        });
+    }
+
+    document.getElementById("postForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const title = document.getElementById("title").value;
+      const content = document.getElementById("content").value;
+
+      fetch("http://backend:5000/add-post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ title, content })
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert(data.message || "Post added");
+        document.getElementById("title").value = "";
+        document.getElementById("content").value = "";
+        loadPosts();
+      });
+    });
+
+    // Initial load
+    loadPosts();
+  </script>
+</body>
+</html>
+

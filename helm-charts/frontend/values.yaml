@@ -1,0 +1,18 @@
+replicaCount: 2
+
+image:
+  repository: shadyemad/blog-frontend
+  pullPolicy: IfNotPresent
+<<<<<<< HEAD
+  tag: "v1.0.16"
+=======
+  tag: "v1.0.23"
+>>>>>>> master
+
+service:
+  type: NodePort
+  port: 80
+
+env:
+  - name: BACKEND_URL
+    value: "http://blog-backend.default.svc.cluster.local:5000"
