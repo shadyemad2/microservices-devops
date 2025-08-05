@@ -4,9 +4,9 @@ image:
   repository: shadyemad/blog-frontend
   pullPolicy: IfNotPresent
 <<<<<<< HEAD
-  tag: "v1.0.3"
+  tag: "v1.0.4"
 =======
-  tag: "v1.0.3"
+  tag: "v1.0.4"
 >>>>>>> master
 
 service:
