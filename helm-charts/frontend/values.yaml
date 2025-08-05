@@ -4,7 +4,6 @@ image:
   repository: shadyemad/blog-frontend
   pullPolicy: IfNotPresent
   tag: "v1.0.3"
-
 service:
   type: NodePort
   port: 80
