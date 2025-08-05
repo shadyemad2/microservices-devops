@@ -4,7 +4,7 @@ import psycopg2
 import os
 
 app = Flask(__name__)
-
+CORS(app)
 # Read DB connection from environment variables
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = os.getenv("DB_PORT", "5432")
