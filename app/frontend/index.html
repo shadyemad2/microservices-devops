@@ -19,8 +19,10 @@
   <ul id="posts"></ul>
 
   <script>
+    const backendURL = "http://192.168.49.2:32369";  // backend NodePort URL
+
     function loadPosts() {
-      fetch("http://backend:5000/posts")
+      fetch(`${backendURL}/posts`)
         .then(res => res.json())
         .then(data => {
           const postsList = document.getElementById("posts");
@@ -30,6 +32,9 @@
             li.innerHTML = `<strong>${post.title}</strong>: ${post.content}`;
             postsList.appendChild(li);
           });
+        })
+        .catch(err => {
+          console.error("Failed to load posts:", err);
         });
     }
 
@@ -38,7 +43,7 @@
       const title = document.getElementById("title").value;
       const content = document.getElementById("content").value;
 
-      fetch("http://backend:5000/add-post", {
+      fetch(`${backendURL}/add-post`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, content })
@@ -49,6 +54,10 @@
         document.getElementById("title").value = "";
         document.getElementById("content").value = "";
         loadPosts();
+      })
+      .catch(err => {
+        alert("Failed to add post");
+        console.error(err);
       });
     });
 
