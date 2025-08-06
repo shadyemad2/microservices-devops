@@ -73,7 +73,7 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 - You can rollback or redeploy from ArgoCD.
 
 <img width="1842" height="809" alt="argocd" src="https://github.com/user-attachments/assets/4371f122-7265-40af-b589-768c787cce80" />
-
+<img width="1229" height="485" alt="argocd-pods" src="https://github.com/user-attachments/assets/d7f60fdc-c08f-43b0-8dfd-175a012e2fab" />
 
 ---
 
@@ -91,8 +91,6 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 ---
 
 ## 📷 Screenshots
-
-> Replace below with actual screenshots:
 
 - <img width="1307" height="740" alt="frontend" src="https://github.com/user-attachments/assets/60c2f26e-02ea-45f5-a9df-7477966322ea" />
 - <img width="1270" height="713" alt="backend" src="https://github.com/user-attachments/assets/cc53f0be-3e2c-4566-b2e5-3afc47f70ac2" />
