@@ -3,6 +3,7 @@
 This is a complete **DevOps microservices project** demonstrating a CI/CD pipeline using **Jenkins**, **Docker**, **Helm**, and **ArgoCD** to deploy a blog application (backend + frontend + database) on a Kubernetes cluster.
 
 ---
+<img width="1018" height="432" alt="overview" src="https://github.com/user-attachments/assets/59cbcf7f-7527-45b0-ba12-428da26ea193" />
 
 ## 📦 Tech Stack
 
@@ -11,16 +12,9 @@ This is a complete **DevOps microservices project** demonstrating a CI/CD pipeli
 - **Database**: PostgreSQL
 - **CI/CD**: Jenkins + Docker + Helm + ArgoCD
 - **Container Registry**: Docker Hub
-- **Kubernetes**: Local cluster (Minikube / kubeadm)
+- **Kubernetes**: Local cluster (Minikube)
 - **Monitoring**: Prometheus + Grafana
 
----
-
-## 📸 Project Architecture
-
-<!-- Add screenshot here (e.g., architecture diagram) -->
-
----
 
 ## 🚀 Project Features
 
@@ -66,7 +60,8 @@ Jenkins is used to automate the CI/CD process:
 4. **Git Commit**: Pushes updated Helm charts to Git (used by ArgoCD).
 5. **Trigger ArgoCD**: ArgoCD detects changes and deploys automatically.
 
-<!-- Add screenshot of Jenkins pipeline here -->
+<img width="1846" height="858" alt="jenkins" src="https://github.com/user-attachments/assets/7a998be0-3257-4946-8b9f-feb35cf0ce21" />
+
 
 ---
 
@@ -77,7 +72,8 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 - ArgoCD UI shows app status and sync status.
 - You can rollback or redeploy from ArgoCD.
 
-<!-- Add screenshot of ArgoCD app here -->
+<img width="1842" height="809" alt="argocd" src="https://github.com/user-attachments/assets/4371f122-7265-40af-b589-768c787cce80" />
+
 
 ---
 
@@ -93,6 +89,13 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 <!-- Add screenshot of Grafana dashboards here -->
 
 ---
+
+## 📷 Screenshots
+
+> Replace below with actual screenshots:
+
+- <img width="1307" height="740" alt="frontend" src="https://github.com/user-attachments/assets/60c2f26e-02ea-45f5-a9df-7477966322ea" />
+- <img width="1270" height="713" alt="backend" src="https://github.com/user-attachments/assets/cc53f0be-3e2c-4566-b2e5-3afc47f70ac2" />
 
 ## 🧪 How to Run Locally
 
@@ -112,15 +115,6 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 
 5. Access ArgoCD and Grafana UIs via NodePort.
 
----
-
-## 🗃️ Future Improvements
-
-- Add unit tests & automated test stage in Jenkins.
-- Enable Slack notifications on pipeline events.
-- Add Ingress controller (e.g., NGINX).
-- Add production-grade secrets management (e.g., Vault or Sealed Secrets).
-- Configure Horizontal Pod Autoscaler (HPA).
 
 ---
 
@@ -134,12 +128,6 @@ DevOps | Linux | Kubernetes | Cloud Enthusiast
 
 ---
 
-## 📷 Screenshots
 
-> Replace below with actual screenshots:
 
-- ![Architecture Diagram](screenshots/architecture.png)
-- ![Jenkins Pipeline](screenshots/jenkins-pipeline.png)
-- ![ArgoCD App](screenshots/argocd-app.png)
-- ![Grafana Dashboard](screenshots/grafana-dashboard.png)
 
