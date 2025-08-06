@@ -39,18 +39,6 @@ spec:
           volumeMounts:
             - name: postgres-data
               mountPath: {{ .Values.volumeMountPath }}
-
-        - name: postgres-exporter
-          image: quay.io/prometheuscommunity/postgres-exporter
-          ports:
-            - containerPort: 9187
-          env:
-            - name: DATA_SOURCE_NAME
-              value: "postgresql://$(POSTGRES_USER):$(POSTGRES_PASSWORD)@localhost:5432/$(POSTGRES_DB)?sslmode=disable"
-          envFrom:
-            - secretRef:
-                name: database-secret
-
       volumes:
         - name: postgres-data
           emptyDir: {}
