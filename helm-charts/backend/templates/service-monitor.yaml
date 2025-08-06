@@ -5,6 +5,7 @@ metadata:
   name: {{ include "backend.fullname" . }}-monitor
   labels:
     release: monitoring
+    app: backend
 spec:
   selector:
     matchLabels:
