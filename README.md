@@ -95,6 +95,7 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 - <img width="1307" height="740" alt="frontend" src="https://github.com/user-attachments/assets/60c2f26e-02ea-45f5-a9df-7477966322ea" />
 - <img width="1270" height="713" alt="backend" src="https://github.com/user-attachments/assets/cc53f0be-3e2c-4566-b2e5-3afc47f70ac2" />
 - <img width="1007" height="461" alt="pods-services" src="https://github.com/user-attachments/assets/3b5f8028-d6f8-4ff5-9264-4a6c3d6d2fda" />
+- <img width="1064" height="751" alt="db-create-table" src="https://github.com/user-attachments/assets/491f3056-962d-4e6f-99b2-78ad261b0242" />
 
 
 ## 🧪 How to Run Locally
