@@ -8,5 +8,8 @@ service:
   type: NodePort
   port: 5000
 
-volumeMountPath: /app/data  
+volumeMountPath: /app/data
+
+monitoring:
+  enabled: true
 

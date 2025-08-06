@@ -11,3 +11,7 @@ service:
 env:
   - name: BACKEND_URL
     value: "http://blog-backend.default.svc.cluster.local:5000"
+
+monitoring:
+  enabled: true
+      

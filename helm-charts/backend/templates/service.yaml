@@ -8,7 +8,9 @@ spec:
   selector:
     app: backend
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: {{ .Values.service.port }}
       targetPort: 5000
   type: {{ .Values.service.type }}
+

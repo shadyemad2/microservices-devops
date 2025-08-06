@@ -6,7 +6,8 @@ spec:
   selector:
     app: frontend
   ports:
-  - protocol: TCP
+  - name: http
+    protocol: TCP
     port: {{ .Values.service.port }}
     targetPort: 80
-  type: {{ .Values.service.type }}
+

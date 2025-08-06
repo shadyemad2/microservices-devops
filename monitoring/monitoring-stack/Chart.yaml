@@ -1,0 +1,8 @@
+# monitoring-stack/Chart.yaml
+apiVersion: v2
+name: monitoring-stack
+description: Prometheus + Grafana monitoring stack
+type: application
+version: 0.1.0
+appVersion: "1.0"
+

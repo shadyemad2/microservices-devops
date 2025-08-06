@@ -8,7 +8,12 @@ spec:
   selector:
     app: database
   ports:
-    - protocol: TCP
-      port: {{ .Values.service.port }}
-      targetPort: 5432
-  type: {{ .Values.service.type }}
+  - name: postgres
+    protocol: TCP
+    port: {{ .Values.service.port }}
+    targetPort: 5432
+  - name: metrics
+    protocol: TCP
+    port: 9187
+    targetPort: 9187
+

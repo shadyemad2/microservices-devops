@@ -1,0 +1,29 @@
+# monitoring-stack/values.yaml
+grafana:
+  enabled: true
+  adminPassword: admin
+  service:
+    type: NodePort
+    port: 3000
+  ingress:
+    enabled: false
+
+prometheus:
+  service:
+    type: NodePort
+    port: 9090
+  ingress:
+    enabled: false
+
+alertmanager:
+  enabled: true
+  service:
+    type: NodePort
+    port: 9093
+
+prometheus-node-exporter:
+  enabled: true
+
+kube-state-metrics:
+  enabled: true
+

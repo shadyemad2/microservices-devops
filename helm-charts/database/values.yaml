@@ -9,4 +9,6 @@ service:
 
 volumeMountPath: /var/lib/postgresql/data
 
+monitoring:
+  enabled: true
 
