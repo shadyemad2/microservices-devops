@@ -40,3 +40,6 @@ spec:
             secretKeyRef:
               name: backend-secret
               key: DB_PASS
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}
+

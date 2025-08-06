@@ -23,3 +23,6 @@ spec:
           - name: {{ .name }}
             value: {{ .value | quote }}
         {{- end }}
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}
+

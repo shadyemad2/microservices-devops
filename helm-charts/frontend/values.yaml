@@ -4,6 +4,7 @@ image:
   repository: shadyemad/blog-frontend
   pullPolicy: IfNotPresent
   tag: "v1.0.12"
+
 service:
   type: NodePort
   port: 80
@@ -14,4 +15,12 @@ env:
 
 monitoring:
   enabled: true
-      
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "250m"
+    memory: "256Mi"
+
