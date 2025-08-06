@@ -85,8 +85,8 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
   - CPU/Memory usage for each pod.
   - Request per second.
   - Health status of services.
-
-<!-- Add screenshot of Grafana dashboards here -->
+<img width="1920" height="854" alt="grafana-cpu" src="https://github.com/user-attachments/assets/66789ffd-4591-40f2-bf49-f1d04d1acf90" />
+<img width="1852" height="877" alt="prometheus" src="https://github.com/user-attachments/assets/00c832ca-5caf-41f4-bebd-f1b95b122fdb" />
 
 ---
 
@@ -94,6 +94,8 @@ ArgoCD continuously monitors the Git repository for changes to Helm charts and s
 
 - <img width="1307" height="740" alt="frontend" src="https://github.com/user-attachments/assets/60c2f26e-02ea-45f5-a9df-7477966322ea" />
 - <img width="1270" height="713" alt="backend" src="https://github.com/user-attachments/assets/cc53f0be-3e2c-4566-b2e5-3afc47f70ac2" />
+- <img width="1007" height="461" alt="pods-services" src="https://github.com/user-attachments/assets/3b5f8028-d6f8-4ff5-9264-4a6c3d6d2fda" />
+
 
 ## 🧪 How to Run Locally
 
