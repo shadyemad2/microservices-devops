@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: shadyemad/blog-backend
   pullPolicy: IfNotPresent
-  tag: "v1.0.12"
+  tag: "v1.0.0"
 
 service:
   type: NodePort
